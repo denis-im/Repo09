@@ -1,9 +1,10 @@
 // Only change code below this line
 function myDoWhile() {
-  var myNumbers = "0";
-  var i = 1;
+  var myNumbers = "";
+  var i = 0;
   do {
-    myNumbers += ", " + i;
+    (i != 0) ? myNumbers += ", " : "";
+    myNumbers += i;
     i++;
   } while (i <= 9);
   return myNumbers;
