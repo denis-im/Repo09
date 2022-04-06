@@ -1,16 +1,18 @@
 // Only change code below this line
 function myForLoop1() {
-  var evenNumbers = "0";
-  for(var i = 2; i <= 8; i += 2) {
-    evenNumbers += ", " + i;
+  var evenNumbers = "";
+  for(var i = 0; i <= 8; i += 2) {
+    (i != 0) ? evenNumbers += ", " : "" ;
+    evenNumbers += + i;
   }
   return evenNumbers;
 }
 
 function myForLoop2() {
-  var evenInverseNumbers = "8";
-  for(var i = 6; i >= 0; i -= 2) {
-    evenInverseNumbers += ", " + i;
+  var evenInverseNumbers = "";
+  for(var i = 8; i >= 0; i -= 2) {
+    (i != 8) ? evenInverseNumbers += ", " : "" ;
+    evenInverseNumbers += i;
   }
   return evenInverseNumbers;
 }
