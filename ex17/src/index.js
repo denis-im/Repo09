@@ -1,9 +1,9 @@
 // Only change code below this line
 function inverseWhile() {
-  var fiveNumbers = "5";
-  var i = 4;
+  var fiveNumbers = "";
+  var i = 5;
   while (i >= 0) {
-    fiveNumbers += "," + i;
+    (i == 5) ? fiveNumbers += i : fiveNumbers += "," + i;
     i--;
   }  
   return fiveNumbers;
